@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import at.ac.htlinn.androidexamples.simplecalculator.SimpleCalculatorActivity;
+import at.ac.htlinn.androidexamples.table.TableInViewActivity;
 
 public class ActivityEntry {
     private String name;
@@ -33,7 +34,7 @@ public class ActivityEntry {
         ArrayList<ActivityEntry> all = new ArrayList<ActivityEntry>();
         all.add(new ActivityEntry("...please select the demo...", null));
         all.add(new ActivityEntry("Simple Calculator", SimpleCalculatorActivity.class));
-        all.add(new ActivityEntry("Zweites Programm", SimpleCalculatorActivity.class));
+        all.add(new ActivityEntry("Generate a table in Activity", TableInViewActivity.class));
         return all;
     }
 }
