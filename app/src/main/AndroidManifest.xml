@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidExamples">
         <activity
+            android:name=".sensor.SensorActivity"
+            android:exported="true" />
+        <activity
             android:name=".table.TableInViewActivity"
             android:exported="true" />
         <activity
