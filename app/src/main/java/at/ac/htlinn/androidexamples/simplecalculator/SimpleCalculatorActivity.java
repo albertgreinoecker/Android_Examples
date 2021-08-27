@@ -9,6 +9,14 @@ import android.widget.TextView;
 
 import at.ac.htlinn.androidexamples.R;
 
+/**
+ * This Activity should serve as a starting point for Android development
+ *
+ * This demo shows:
+ * * General setup of an Activity
+ * * how to deal with a spinner component
+ * * Usage and customization of linear layout
+ */
 public class SimpleCalculatorActivity extends AppCompatActivity {
 
     @Override
