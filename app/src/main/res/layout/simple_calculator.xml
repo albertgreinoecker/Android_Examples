@@ -6,4 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".simplecalculator.SimpleCalculatorActivity">
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/op1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/holo_orange_light"
+            android:clickable="false"
+            android:contentDescription="Zahl 1 eingeben"
+            android:contextClickable="true"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="5pt" />
+
+        <Spinner
+            android:id="@+id/oper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:entries="@array/operators"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/op2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/holo_orange_light"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="5pt" />
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calculate"
+            android:text="@string/calculate" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/holo_orange_light"
+            android:paddingHorizontal="5pt"
+            android:paddingVertical="5pt" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

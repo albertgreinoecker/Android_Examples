@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Android Examples</string>
     <string name="please_select_activity">Bitte wählen Sie eine Activity</string>
+    <string name="calculate">Berechne</string>
+    <string-array name="operators">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
 </resources>

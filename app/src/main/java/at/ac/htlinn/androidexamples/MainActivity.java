@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         List<ActivityEntry> entries = ActivityEntry.all();
         ArrayAdapter entryAdapter = new ArrayAdapter(this,R.layout.support_simple_spinner_dropdown_item, entries);
         activitySelect.setAdapter(entryAdapter);
-        activitySelect.setSelection(0,false); //Avoid selection during initialization
+        //activitySelect.setSelection(0,false); //Avoid selection during initialization
         activitySelect.setOnItemSelectedListener(this);
 
     }
@@ -31,8 +31,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         ActivityEntry entry = (ActivityEntry)activitySelect.getSelectedItem();
-        Intent intent = new Intent(this, entry.getActivity());
-        startActivity(intent);
+        if (entry.getActivity() != null) {
+            Intent intent = new Intent(this, entry.getActivity());
+            startActivity(intent);
+        }
     }
 
     @Override

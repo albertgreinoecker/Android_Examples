@@ -31,7 +31,8 @@ public class ActivityEntry {
     public static List<ActivityEntry> all()
     {
         ArrayList<ActivityEntry> all = new ArrayList<ActivityEntry>();
-        all.add(new ActivityEntry("Erstes Programm", SimpleCalculatorActivity.class));
+        all.add(new ActivityEntry("...please select the demo...", null));
+        all.add(new ActivityEntry("Simple Calculator", SimpleCalculatorActivity.class));
         all.add(new ActivityEntry("Zweites Programm", SimpleCalculatorActivity.class));
         return all;
     }
