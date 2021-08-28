@@ -20,6 +20,7 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
     private SensorManager sm;
     private Sensor stepCounter;
     private int step = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,6 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        Log.d("SENSOR", "XXX");
         TextView stepsText = findViewById(R.id.steps_text);
         stepsText.setText(String.format("Number of steps: %d (%d)", ++step, sensorEvent.values[0]));
     }
