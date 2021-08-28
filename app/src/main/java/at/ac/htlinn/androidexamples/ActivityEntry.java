@@ -3,6 +3,7 @@ package at.ac.htlinn.androidexamples;
 import java.util.ArrayList;
 import java.util.List;
 
+import at.ac.htlinn.androidexamples.sensor.LightSensorActivity;
 import at.ac.htlinn.androidexamples.sensor.OrientationSensorBallActivity;
 import at.ac.htlinn.androidexamples.sensor.ProximitySensorActivity;
 import at.ac.htlinn.androidexamples.sensor.SensorActivity;
@@ -56,7 +57,7 @@ public class ActivityEntry {
         all.add(new ActivityEntry("Orientation Sensor: Ball game", OrientationSensorBallActivity.class));
         all.add(new ActivityEntry("Step Counter", StepCounterActivity.class));
         all.add(new ActivityEntry("Proximity Sensor", ProximitySensorActivity.class));
-
+        all.add(new ActivityEntry("Light Sensor", LightSensorActivity.class));
 
         return all;
     }

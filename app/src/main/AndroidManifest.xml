@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidExamples">
         <activity
+            android:name=".sensor.LightSensorActivity"
+            android:exported="true" />
+        <activity
             android:name=".sensor.ProximitySensorActivity"
             android:exported="true" />
         <activity
