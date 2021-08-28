@@ -90,6 +90,7 @@ public class OrientationSensorBallActivity extends AppCompatActivity implements 
                 float roll = Math.round(Math.toDegrees(orientation[2]));
                 mv.setCx((float) (mv.getCx() + roll * 0.5));
                 mv.setCy((float) (mv.getCy() - pitch * 0.5));
+                mv.setOrientation(orientation);
                 mv.invalidate();
             }
         }
