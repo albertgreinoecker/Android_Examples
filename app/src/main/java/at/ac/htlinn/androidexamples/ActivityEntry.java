@@ -5,6 +5,7 @@ import java.util.List;
 
 import at.ac.htlinn.androidexamples.sensor.OrientationSensorBallActivity;
 import at.ac.htlinn.androidexamples.sensor.SensorActivity;
+import at.ac.htlinn.androidexamples.sensor.StepCounterActivity;
 import at.ac.htlinn.androidexamples.simplecalculator.SimpleCalculatorActivity;
 import at.ac.htlinn.androidexamples.table.TableInViewActivity;
 
@@ -52,6 +53,8 @@ public class ActivityEntry {
         ArrayList<ActivityEntry> all = new ArrayList<ActivityEntry>();
         all.add(new ActivityEntry("...please select the demo...", null));
         all.add(new ActivityEntry("Orientation Sensor: Ball game", OrientationSensorBallActivity.class));
+        all.add(new ActivityEntry("Step Counter", StepCounterActivity.class));
+
         return all;
     }
 }
