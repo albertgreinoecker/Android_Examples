@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import at.ac.htlinn.androidexamples.sensor.OrientationSensorBallActivity;
+import at.ac.htlinn.androidexamples.sensor.ProximitySensorActivity;
 import at.ac.htlinn.androidexamples.sensor.SensorActivity;
 import at.ac.htlinn.androidexamples.sensor.StepCounterActivity;
 import at.ac.htlinn.androidexamples.simplecalculator.SimpleCalculatorActivity;
@@ -54,6 +55,8 @@ public class ActivityEntry {
         all.add(new ActivityEntry("...please select the demo...", null));
         all.add(new ActivityEntry("Orientation Sensor: Ball game", OrientationSensorBallActivity.class));
         all.add(new ActivityEntry("Step Counter", StepCounterActivity.class));
+        all.add(new ActivityEntry("Proximity Sensor", ProximitySensorActivity.class));
+
 
         return all;
     }
