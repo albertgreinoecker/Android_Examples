@@ -3,6 +3,7 @@ package at.ac.htlinn.androidexamples;
 import java.util.ArrayList;
 import java.util.List;
 
+import at.ac.htlinn.androidexamples.googlemaps.SimpleMapsActivity;
 import at.ac.htlinn.androidexamples.sensor.LightSensorActivity;
 import at.ac.htlinn.androidexamples.sensor.OrientationSensorBallActivity;
 import at.ac.htlinn.androidexamples.sensor.ProximitySensorActivity;
@@ -44,6 +45,7 @@ public class ActivityEntry {
         all.add(new ActivityEntry("Simple Calculator", SimpleCalculatorActivity.class));
         all.add(new ActivityEntry("Generate a table in Activity", TableInViewActivity.class));
         all.add(new ActivityEntry("List all Sensors", SensorActivity.class));
+        all.add(new ActivityEntry("Google Maps", SimpleMapsActivity.class));
         return all;
     }
 

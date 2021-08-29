@@ -9,4 +9,5 @@
         <item>/</item>
     </string-array>
     <string name="select_sensor_demo">Select the sensor demo</string>
+    <string name="title_activity_simple_maps">SimpleMapsActivity</string>
 </resources>
