@@ -19,7 +19,32 @@ import at.ac.htlinn.androidexamples.R;
  * ...generate a Map (as part of the whole screen)
  * ...set a marker
  * ...react on clicking on a marker or on the whole map
- *  To make it work, generate your own key as described in res/values/google_maps_api.xml
+ *  To make it work, generate your own key in res/values/google_maps_api.xml The file has the following structure:
+ *  <resources>
+ *     <!--
+ *     TODO: Before you run your application, you need a Google Maps API key.
+ *
+ *     To get one, follow this link, follow the directions and press "Create" at the end:
+ *
+ *     https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=5B:EA:4C:AF:07:45:CD:3C:4A:D9:AD:40:51:0F:83:B0:56:A1:C3:4D%3Bat.ac.htlinn.androidexamples.googlemaps
+ *
+ *     You can also add your credentials to an existing key, using these values:
+ *
+ *     Package name:
+ *     at.ac.htlinn.androidexamples.googlemaps
+ *
+ *     SHA-1 certificate fingerprint:
+ *     5B:EA:4C:AF:07:45:CD:3C:4A:D9:AD:40:51:0F:83:B0:56:A1:C3:4D
+ *
+ *     Alternatively, follow the directions here:
+ *     https://developers.google.com/maps/documentation/android/start#get-key
+ *
+ *     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+ *     string in this file.
+ *     -->
+ *     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">ADD YOUR KEY HERE</string>
+ * </resources>
+ *
  */
 public class SimpleMapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMarkerClickListener {
 
