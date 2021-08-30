@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import at.ac.htlinn.androidexamples.googlemaps.SimpleMapsActivity;
+import at.ac.htlinn.androidexamples.location.SimpleLocationActivity;
 import at.ac.htlinn.androidexamples.sensor.LightSensorActivity;
 import at.ac.htlinn.androidexamples.sensor.OrientationSensorBallActivity;
 import at.ac.htlinn.androidexamples.sensor.ProximitySensorActivity;
@@ -46,6 +47,7 @@ public class ActivityEntry {
         all.add(new ActivityEntry("Generate a table in Activity", TableInViewActivity.class));
         all.add(new ActivityEntry("List all Sensors", SensorActivity.class));
         all.add(new ActivityEntry("Google Maps", SimpleMapsActivity.class));
+        all.add(new ActivityEntry("Location Service", SimpleLocationActivity.class));
         return all;
     }
 
