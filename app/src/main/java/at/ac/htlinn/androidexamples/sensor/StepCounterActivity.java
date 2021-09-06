@@ -1,7 +1,9 @@
 package at.ac.htlinn.androidexamples.sensor;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -27,8 +29,9 @@ public class StepCounterActivity extends AppCompatActivity implements SensorEven
         setContentView(R.layout.activity_step_counter);
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
 
+
         stepCounter = sm.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
-        sm.registerListener(this, stepCounter, SensorManager.SENSOR_DELAY_NORMAL);
+        sm.registerListener(this, stepCounter, SensorManager.SENSOR_DELAY_UI);
     }
 
     @Override

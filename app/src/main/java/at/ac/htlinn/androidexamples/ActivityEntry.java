@@ -3,6 +3,8 @@ package at.ac.htlinn.androidexamples;
 import java.util.ArrayList;
 import java.util.List;
 
+import at.ac.htlinn.androidexamples.concurrent.ConcurrentActivity;
+import at.ac.htlinn.androidexamples.concurrent.asynctask.SimpleAsyncTaskActivity;
 import at.ac.htlinn.androidexamples.googlemaps.SimpleMapsActivity;
 import at.ac.htlinn.androidexamples.location.SimpleLocationActivity;
 import at.ac.htlinn.androidexamples.sensor.LightSensorActivity;
@@ -48,6 +50,7 @@ public class ActivityEntry {
         all.add(new ActivityEntry("List all Sensors", SensorActivity.class));
         all.add(new ActivityEntry("Google Maps", SimpleMapsActivity.class));
         all.add(new ActivityEntry("Location Service", SimpleLocationActivity.class));
+        all.add(new ActivityEntry("Concurrent Examples", ConcurrentActivity.class));
         return all;
     }
 
@@ -63,6 +66,17 @@ public class ActivityEntry {
         all.add(new ActivityEntry("Proximity Sensor", ProximitySensorActivity.class));
         all.add(new ActivityEntry("Light Sensor", LightSensorActivity.class));
 
+        return all;
+    }
+
+    /**
+     * All demos listed on the Sensor page
+     */
+    public static List<ActivityEntry> allConcurrent()
+    {
+        ArrayList<ActivityEntry> all = new ArrayList<ActivityEntry>();
+        all.add(new ActivityEntry("...please select the demo...", null));
+        all.add(new ActivityEntry("Simple calls using AsyncTask", SimpleAsyncTaskActivity.class));
         return all;
     }
 }

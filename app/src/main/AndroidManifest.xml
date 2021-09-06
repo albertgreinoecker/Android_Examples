@@ -20,6 +20,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidExamples">
         <activity
+            android:name=".concurrent.ConcurrentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".concurrent.asynctask.SimpleAsyncTaskActivity"
+            android:exported="true" />
+        <activity
             android:name=".location.SimpleLocationActivity"
             android:exported="true" />
         <!--
