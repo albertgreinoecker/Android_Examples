@@ -8,7 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.gson.Gson;
+
 import at.ac.htlinn.androidexamples.R;
+import lombok.Getter;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -66,6 +69,21 @@ public class SimpleAsyncTaskActivity extends AppCompatActivity implements View.O
         @Override
         protected void onPostExecute(String result) {
             contentTv.setText(result);
+            //we already know Gson for JSON Processing
+            Gson gson = new Gson();
+            Todo todo = gson.fromJson(result, Todo.class);
+            contentTv.append("\n");
+            contentTv.append(String.format("TITLE: %s\n",todo.getTitle()));
+
         }
+    }
+
+    class Todo
+    {
+        private int userId;
+        private int id;
+        @Getter
+        private String title;
+        private boolean completed;
     }
 }
