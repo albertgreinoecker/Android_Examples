@@ -20,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidExamples">
         <activity
+            android:name=".ttt.TicTacToe"
+            android:exported="true" />
+        <activity
             android:name=".concurrent.ConcurrentActivity"
             android:exported="true" />
         <activity

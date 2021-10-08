@@ -12,4 +12,7 @@
     <string name="title_activity_simple_maps">SimpleMapsActivity</string>
     <string name="async_task_fetch">Fetch</string>
     <string name="select_concurrent_demo">Select the concurrent demo</string>
+    <string name="ttt_illegal_move">Unerlaubter Zug</string>
+    <string name="ttt_won">Gewonnen</string>
+    <string name="ttt_draw">Unentschieden</string>
 </resources>
