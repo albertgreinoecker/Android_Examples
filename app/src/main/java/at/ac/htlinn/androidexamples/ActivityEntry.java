@@ -14,6 +14,7 @@ import at.ac.htlinn.androidexamples.sensor.SensorActivity;
 import at.ac.htlinn.androidexamples.sensor.StepCounterActivity;
 import at.ac.htlinn.androidexamples.simplecalculator.SimpleCalculatorActivity;
 import at.ac.htlinn.androidexamples.table.TableInViewActivity;
+import at.ac.htlinn.androidexamples.ttt.TicTacToe;
 
 public class ActivityEntry {
     private String name;
@@ -46,6 +47,7 @@ public class ActivityEntry {
         ArrayList<ActivityEntry> all = new ArrayList<ActivityEntry>();
         all.add(new ActivityEntry("...please select the demo...", null));
         all.add(new ActivityEntry("Simple Calculator", SimpleCalculatorActivity.class));
+        all.add(new ActivityEntry("TTT - TableView Demo", TicTacToe.class));
         all.add(new ActivityEntry("Generate a table in Activity", TableInViewActivity.class));
         all.add(new ActivityEntry("List all Sensors", SensorActivity.class));
         all.add(new ActivityEntry("Google Maps", SimpleMapsActivity.class));
