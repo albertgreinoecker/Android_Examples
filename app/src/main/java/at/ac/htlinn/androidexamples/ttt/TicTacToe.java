@@ -23,6 +23,7 @@ import at.ac.htlinn.androidexamples.R;
  */
 public class TicTacToe extends AppCompatActivity implements View.OnClickListener {
     TTTGame game;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +40,7 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
     }
 
     /**
-     * Generate a row with nuttons according to <i>tags</i>
+     * Generate a row with buttons according to <i>tags</i>
      * @param tags the tags of the buttons to be set
      * @return a fully prepared row already containing the buttons
      */
