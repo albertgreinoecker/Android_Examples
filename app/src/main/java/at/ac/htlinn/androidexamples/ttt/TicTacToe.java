@@ -65,8 +65,6 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
     private ImageButton generateButton(int tag)
     {
         ImageButton b = new ImageButton(this);
-        b.setAdjustViewBounds(true);
-        b.setAdjustViewBounds(true);
         b.setImageResource(R.drawable.b2);
         b.setTag(tag);
         b.setOnClickListener(this);
@@ -86,10 +84,10 @@ public class TicTacToe extends AppCompatActivity implements View.OnClickListener
         {
             if (game.actPlayer == TTTGame.C.O)
             {
-                ((ImageButton)view).setImageResource(R.drawable.x2);
+                ((ImageButton)view).setImageResource(R.drawable.o2);
             } else
             {
-                ((ImageButton)view).setImageResource(R.drawable.o2);
+                ((ImageButton)view).setImageResource(R.drawable.x2);
             }
             if (game.won())
             {
