@@ -55,13 +55,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="calculate"
-            android:text="@string/calculate" />
+            android:text="@string/calculate"
+            style="@style/Button.White2"
+
+            />
 
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="@android:color/holo_orange_light"
+            android:background="@android:color/holo_green_dark"
             android:paddingHorizontal="5pt"
             android:paddingVertical="5pt" />
 
