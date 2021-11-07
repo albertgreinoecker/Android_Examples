@@ -14,6 +14,7 @@ import at.ac.htlinn.androidexamples.sensor.SensorActivity;
 import at.ac.htlinn.androidexamples.sensor.StepCounterActivity;
 import at.ac.htlinn.androidexamples.simplecalculator.SimpleCalculatorActivity;
 import at.ac.htlinn.androidexamples.table.TableInViewActivity;
+import at.ac.htlinn.androidexamples.thingworx.ThingWorxActivity;
 import at.ac.htlinn.androidexamples.ttt.TicTacToe;
 
 public class ActivityEntry {
@@ -53,6 +54,7 @@ public class ActivityEntry {
         all.add(new ActivityEntry("Google Maps", SimpleMapsActivity.class));
         all.add(new ActivityEntry("Location Service", SimpleLocationActivity.class));
         all.add(new ActivityEntry("Concurrent Examples", ConcurrentActivity.class));
+        all.add(new ActivityEntry("Thingworx Example", ThingWorxActivity.class));
         return all;
     }
 

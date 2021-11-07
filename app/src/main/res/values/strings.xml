@@ -15,4 +15,16 @@
     <string name="ttt_illegal_move">Unerlaubter Zug</string>
     <string name="ttt_won">Gewonnen</string>
     <string name="ttt_draw">Unentschieden</string>
+    <string name="title_activity_thing_worx">ThingWorxActivity</string>
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="from_server">Vom Server holen…</string>
+    <string name="to_server">Auf dem Server speichern…</string>
+    <string name="key">Schlüssel</string>
+    <string name="value">Wert</string>
+    <string name="send">Senden</string>
+    <string name="get">Holen</string>
 </resources>
