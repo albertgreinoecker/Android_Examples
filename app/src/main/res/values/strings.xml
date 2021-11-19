@@ -27,4 +27,5 @@
     <string name="value">Wert</string>
     <string name="send">Senden</string>
     <string name="get">Holen</string>
+    <string name="service_call">Serviceaufruf</string>
 </resources>
