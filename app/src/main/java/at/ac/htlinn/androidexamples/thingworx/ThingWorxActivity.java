@@ -214,8 +214,7 @@ public class ThingWorxActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(String... urls) {
-            String sendKey = ((EditText)findViewById(R.id.key_from_server)).getText().toString();
-            String url = String.format("%s/Thingworx/Things/%s/Services/AddOrUpdateDataTableEntry", baseURl, datatable, sendKey); //Add the parameter to the url to fetch value
+            String url = String.format("%s/Thingworx/Things/%s/Services/AddOrUpdateDataTableEntry", baseURl, datatable); //Add the parameter to the url to fetch value
             RequestBody body = null;
             try {
                 String jsonStr = generateDataJSON().toString();
@@ -241,7 +240,7 @@ public class ThingWorxActivity extends AppCompatActivity {
 
                 JsonObject obj = new Gson().fromJson(responseStr, JsonObject.class);
 
-                responseStr = obj.getAsJsonArray("rows").get(0).getAsJsonObject().get(sendKey).getAsString();
+                //responseStr = obj.getAsJsonArray("rows").get(0).getAsJsonObject().get(sendKey).getAsString();
             } catch (Exception e)
             {
                 Log.e("ThingWorxActivity", String.valueOf(e));
