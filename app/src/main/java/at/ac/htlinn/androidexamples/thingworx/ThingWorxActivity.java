@@ -248,6 +248,11 @@ public class ThingWorxActivity extends AppCompatActivity {
 
             return responseStr;
         }
+
+        /**
+         * Used to public progress, just call publishProgress((int) from doInBackground
+         * @param values
+         */
         @Override
         protected void onProgressUpdate(Void... values) {
             super.onProgressUpdate(values);
