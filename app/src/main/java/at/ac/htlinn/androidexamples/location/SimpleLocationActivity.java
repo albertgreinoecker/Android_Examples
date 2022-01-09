@@ -24,17 +24,16 @@ import at.ac.htlinn.androidexamples.R;
  */
 public class SimpleLocationActivity extends AppCompatActivity {
 
-    @SuppressLint("MissingPermission")
+    @SuppressLint("MissingPermission")   //ignore the warning
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("LOCATION", "create activity");
         setContentView(R.layout.activity_simple_location);
 
         //Settings how frequently updates should be fetched
         LocationRequest locationRequest = LocationRequest.create();
         locationRequest.setInterval(5000);
-        locationRequest.setFastestInterval(5000);
+        locationRequest.setFastestInterval(5000); //this is the lowest rate at which update is called
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         //this callback is periodically called
