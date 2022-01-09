@@ -3,20 +3,23 @@ package at.ac.htlinn.androidexamples.location;
 import android.annotation.SuppressLint;
 import android.location.Location;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.Task;
 
 import at.ac.htlinn.androidexamples.R;
 
 /**
- * do not forget to set permissions in AndroidManifest
+ * do not forget to set permissions in AndroidManifest and also within the Location Settings of the Phone
  * Here, latitude, longitude and altitude are periodically fetched (for further processing)
  */
 public class SimpleLocationActivity extends AppCompatActivity {
@@ -25,6 +28,7 @@ public class SimpleLocationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("LOCATION", "create activity");
         setContentView(R.layout.activity_simple_location);
 
         //Settings how frequently updates should be fetched
@@ -32,11 +36,13 @@ public class SimpleLocationActivity extends AppCompatActivity {
         locationRequest.setInterval(5000);
         locationRequest.setFastestInterval(5000);
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+
         //this callback is periodically called
         LocationCallback mLocationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(LocationResult locationResult) {
                 TextView locationText = findViewById(R.id.location_text);
+                Log.d("LOCATION", "calling callback");
                 if (locationResult == null) {
                     Log.d("LOCATION", "locationResult is null");
                     return;
@@ -49,7 +55,6 @@ public class SimpleLocationActivity extends AppCompatActivity {
                 }
             }
         };
-        LocationServices.getFusedLocationProviderClient(this).requestLocationUpdates(locationRequest, mLocationCallback, null);
-
+        LocationServices.getFusedLocationProviderClient(this).requestLocationUpdates(locationRequest, mLocationCallback, Looper.getMainLooper());
     }
 }
