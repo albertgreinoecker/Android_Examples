@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
 
+import java.io.IOException;
+
 import at.ac.htlinn.androidexamples.R;
 import lombok.Getter;
 import okhttp3.OkHttpClient;
@@ -45,7 +47,6 @@ public class SimpleAsyncTaskActivity extends AppCompatActivity implements View.O
      * Z...return type of doInBackground
      */
     private class SimpleAsyncTask extends AsyncTask<String, Void, String> {
-        @lombok.SneakyThrows  //to avoid exception handling
         @Override
         protected String doInBackground(String... urls) {
             //find more information on https://github.com/square/okhttp
@@ -54,10 +55,16 @@ public class SimpleAsyncTaskActivity extends AppCompatActivity implements View.O
                     new Request.Builder()
                             .url(urls[0])
                             .build();
-            Response response = client.newCall(request).execute();
-            if (response.isSuccessful()) {
-                return response.body().string();
+            Response response = null;
+            try {
+                response = client.newCall(request).execute();
+                if (response.isSuccessful()) {
+                    return response.body().string();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+
             return "Download failed";
         }
 
@@ -82,8 +89,13 @@ public class SimpleAsyncTaskActivity extends AppCompatActivity implements View.O
     {
         private int userId;
         private int id;
-        @Getter
+
         private String title;
+
+        public String getTitle() {
+            return title;
+        }
+
         private boolean completed;
     }
 }
