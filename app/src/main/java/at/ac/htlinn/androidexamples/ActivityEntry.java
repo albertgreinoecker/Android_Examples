@@ -6,6 +6,7 @@ import java.util.List;
 import at.ac.htlinn.androidexamples.concurrent.ConcurrentActivity;
 import at.ac.htlinn.androidexamples.concurrent.asynctask.SimpleAsyncTaskActivity;
 import at.ac.htlinn.androidexamples.googlemaps.SimpleMapsActivity;
+import at.ac.htlinn.androidexamples.json.JSONActivity;
 import at.ac.htlinn.androidexamples.location.SimpleLocationActivity;
 import at.ac.htlinn.androidexamples.mqtt.MQTTActivity;
 import at.ac.htlinn.androidexamples.sensor.LightSensorActivity;
@@ -57,6 +58,7 @@ public class ActivityEntry {
         all.add(new ActivityEntry("Concurrent Examples", ConcurrentActivity.class));
         all.add(new ActivityEntry("Thingworx Example", ThingWorxActivity.class));
         all.add(new ActivityEntry("MQTT Example", MQTTActivity.class));
+        all.add(new ActivityEntry("JSON Example", JSONActivity.class));
         return all;
     }
 
