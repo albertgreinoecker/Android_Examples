@@ -22,7 +22,6 @@ import java.io.IOException;
 
 import at.ac.htlinn.androidexamples.R;
 import at.ac.htlinn.androidexamples.concurrent.asynctask.SimpleAsyncTaskActivity;
-import lombok.SneakyThrows;
 import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -43,7 +42,7 @@ public class ThingWorxActivity extends AppCompatActivity {
         appKey = getString(R.string.app_key);
         baseURl = getString(R.string.url);
         thing = getString(R.string.thing);
-        datatable = getString(R.string.data_table);
+        datatable = "ADD VALUE";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thing_worx);
     }

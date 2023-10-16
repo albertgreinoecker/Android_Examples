@@ -13,7 +13,6 @@ import com.google.gson.Gson;
 import java.io.IOException;
 
 import at.ac.htlinn.androidexamples.R;
-import lombok.Getter;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

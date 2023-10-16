@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hivemq_uri">Place your URI here...</string>
+    <string name="hivemq_user">Place your URI here...</string>
+    <string name="hivemq_password">Place your URI here...</string>
+</resources>
