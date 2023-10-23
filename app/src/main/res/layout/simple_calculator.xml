@@ -11,9 +11,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="24dp"
         android:divider="@drawable/divider"
         android:orientation="vertical"
         android:showDividers="middle"
@@ -55,11 +55,11 @@
 
         <Button
             android:id="@+id/equals"
+            style="@style/Button.White2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="calculate"
             android:text="@string/calculate"
-            style="@style/Button.White2"
 
             />
 
