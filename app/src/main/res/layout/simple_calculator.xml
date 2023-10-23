@@ -28,8 +28,9 @@
             android:layout_height="48dp"
             android:background="@android:color/holo_orange_light"
             android:clickable="false"
-            android:contentDescription="Zahl 1 eingeben"
             android:contextClickable="true"
+            android:hint="@string/simplecalc_enter_1"
+            android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:paddingHorizontal="5pt" />
 
@@ -47,6 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@android:color/holo_orange_light"
+            android:hint="@string/simplecalc_enter_2"
+            android:importantForAutofill="no"
             android:inputType="numberDecimal"
             android:paddingHorizontal="5pt" />
 
